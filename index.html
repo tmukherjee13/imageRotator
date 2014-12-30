@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Album Image Rotator</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/imageRotator.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function() {
+                jQuery(".album").imageRotator({
+                    selector: "img"
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>My Album Collection</h1>
+
+        <h2>My First Album</h2>
+        <div class="album" id="album1">
+            <img class="" src="photos/thumb_image1.jpg" alt="Lorem" />
+            <img class="" src="photos/thumb_image2.jpg" alt="Ipsum" />
+            <img class="" src="photos/thumb_image3.jpg" alt="Lorem" />
+        </div>
+        <h2>Second Album</h2>
+        <div class="album" id="album2">
+            <img class="" src="photos/thumb_image4.jpg" alt="Lorem" />
+            <img class="" src="photos/thumb_image2.jpg" alt="Ipsum" />
+            <img class="" src="photos/thumb_image5.jpg" alt="Lorem" />
+	    <img class="" src="photos/thumb_image1.jpg" alt="Lorem" />
+            <img class="" src="photos/thumb_image3.jpg" alt="Ipsum" />
+            
+        </div>
+    </body>
+</html>
